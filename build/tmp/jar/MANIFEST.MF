@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Specification-Title: LPChatPrefix
+Specification-Version: 1.1.0
+Implementation-Title: lpchatprefix
+Implementation-Version: 1.1.0
+Implementation-Vendor: Example
+FMLModType: MOD
+
