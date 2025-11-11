@@ -1,7 +1,7 @@
 # LuckPerms 聊天前缀 NeoForge 模组
 
-[![GitHub 发布](https://img.shields.io/github/release/YOUR_GITHUB_USERNAME/lpchatprefix.svg)](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases/latest)
-[![下载量](https://img.shields.io/github/downloads/YOUR_GITHUB_USERNAME/lpchatprefix/total.svg)](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases)
+[![GitHub 发布](https://img.shields.io/github/release/Viking602/LPchatprefix.svg)](https://github.com/Viking602/LPchatprefix/releases/latest)
+[![下载量](https://img.shields.io/github/downloads/Viking602/LPchatprefix/total.svg)](https://github.com/Viking602/LPchatprefix/releases)
 [![许可证](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)](https://minecraft.net)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.0+-orange.svg)](https://neoforged.net)
@@ -28,10 +28,10 @@
 ## 安装说明
 
 ### 下载
-从 [GitHub Releases](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases/latest) 下载最新版本
+从 [GitHub Releases](https://github.com/Viking602/LPchatprefix/releases/latest) 下载最新版本
 
 ### 服务器安装
-1. 从[发布页面](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases)下载最新的 `lpchatprefix-1.21.1_1.1.0.jar`
+1. 从[发布页面](https://github.com/Viking602/LPchatprefix/releases)下载最新的 `lpchatprefix-1.21.1_1.1.0.jar`
 2. 将 JAR 文件放入服务器的 `mods` 文件夹
 3. 确保 LuckPerms 已安装并配置
 4. 启动/重启服务器
@@ -112,8 +112,8 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix.git
-cd lpchatprefix
+git clone https://github.com/Viking602/LPchatprefix.git
+cd LPchatprefix
 
 # 构建模组
 ./gradlew clean build

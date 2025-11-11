@@ -1,7 +1,7 @@
 # LuckPerms Chat Prefix for NeoForge
 
-[![GitHub Release](https://img.shields.io/github/release/YOUR_GITHUB_USERNAME/lpchatprefix.svg)](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases/latest)
-[![Downloads](https://img.shields.io/github/downloads/YOUR_GITHUB_USERNAME/lpchatprefix/total.svg)](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases)
+[![GitHub Release](https://img.shields.io/github/release/Viking602/LPchatprefix.svg)](https://github.com/Viking602/LPchatprefix/releases/latest)
+[![Downloads](https://img.shields.io/github/downloads/Viking602/LPchatprefix/total.svg)](https://github.com/Viking602/LPchatprefix/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)](https://minecraft.net)
 [![NeoForge](https://img.shields.io/badge/NeoForge-21.1.0+-orange.svg)](https://neoforged.net)
@@ -26,10 +26,10 @@ A server-side NeoForge mod that displays LuckPerms prefixes and suffixes in chat
 ## Installation
 
 ### Download
-Download the latest version from [GitHub Releases](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases/latest)
+Download the latest version from [GitHub Releases](https://github.com/Viking602/LPchatprefix/releases/latest)
 
 ### Server Installation
-1. Download the latest `lpchatprefix-1.21.1_1.1.0.jar` from [releases page](https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix/releases)
+1. Download the latest `lpchatprefix-1.21.1_1.1.0.jar` from [releases page](https://github.com/Viking602/LPchatprefix/releases)
 2. Place the JAR file in your server's `mods` folder
 3. Ensure LuckPerms is installed and configured
 4. Start/restart your server
@@ -110,8 +110,8 @@ The mod supports Minecraft color codes using the `&` symbol:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_GITHUB_USERNAME/lpchatprefix.git
-cd lpchatprefix
+git clone https://github.com/Viking602/LPchatprefix.git
+cd LPchatprefix
 
 # Build the mod
 ./gradlew clean build
