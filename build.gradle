@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'net.neoforged.moddev' version '2.0.72'
+}
+
+group = 'com.example'
+version = '1.21.1_1.1.0'
+
+java {
+    toolchain.languageVersion = JavaLanguageVersion.of(21)
+}
+
+neoForge {
+    version = "21.1.125" // 最新 NeoForge 1.21.1 构建号之一
+    runs {
+        client {
+            gameDirectory = project.file("run")
+        }
+        server {
+            gameDirectory = project.file("run_server")
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.neoforged.net/releases' }
+    maven { url = 'https://repo.lucko.me/' }
+    maven { url = 'https://repo.spongepowered.org/maven' }
+}
+
+dependencies {
+    compileOnly "net.luckperms:api:5.4"
+    // 不需要 Adventure API，直接使用 Minecraft 原生 Component
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveBaseName = 'lpchatprefix'
+    manifest {
+        attributes([
+            'Specification-Title': 'LPChatPrefix',
+            'Specification-Version': version,
+            'Implementation-Title': project.name,
+            'Implementation-Version': version,
+            'Implementation-Vendor': 'Example',
+            'FMLModType': 'MOD'
+        ])
+    }
+}

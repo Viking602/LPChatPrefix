@@ -1,0 +1,66 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# Visual Studio Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Minecraft
+run/
+run_server/
+logs/
+crash-reports/
+saves/
+screenshots/
+options.txt
+usernamecache.json
+
+# Mod specific
+*.jar.bak
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# Package Files
+*.war
+*.nar
+*.ear
+*.tar.gz
+*.rar
+
+# virtual machine crash logs
+hs_err_pid*
+
+# Local configuration
+local.properties
