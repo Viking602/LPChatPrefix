@@ -1,13 +1,13 @@
 modLoader="javafml"
-loaderVersion="[4,)"
+loaderVersion="[47,)"
 license="MIT"
 issueTrackerURL=""
 
 [[mods]]
 modId="lpchatprefix"
-version="1.21.1_1.1.0"
-displayName="LuckPerms Chat Prefix (MC 1.21.1 Only)"
-description='''显示 LuckPerms 的 Prefix / Suffix，支持颜色代码与 MiniMessage 格式 - 仅适用于 Minecraft 1.21.1 服务器端'''
+version="1.20.1_1.1.0"
+displayName="LuckPerms Chat Prefix (MC 1.20.1 Only)"
+description='''显示 LuckPerms 的 Prefix / Suffix，支持颜色代码与 MiniMessage 格式 - 仅适用于 Minecraft 1.20.1 服务器端'''
 displayTest="IGNORE_SERVER_VERSION"
 logoFile="lpchatprefix.png"
 authors="YourName"
@@ -15,15 +15,15 @@ displayURL=""
 credits=""
 
 [[dependencies.lpchatprefix]]
-    modId="neoforge"
+    modId="forge"
     type="required"
-    versionRange="[21.1.0,)"
+    versionRange="[47.1.0,)"
     ordering="NONE"
     side="SERVER"
 
 [[dependencies.lpchatprefix]]
     modId="minecraft"
     type="required"
-    versionRange="[1.21.1,1.21.2)"
+    versionRange="[1.20.1,1.20.2)"
     ordering="NONE"
     side="SERVER"

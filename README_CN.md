@@ -1,12 +1,12 @@
-# LuckPerms 聊天前缀 NeoForge 模组
+# LuckPerms 聊天前缀 Forge 模组
 
 [![GitHub 发布](https://img.shields.io/github/release/Viking602/LPchatprefix.svg)](https://github.com/Viking602/LPchatprefix/releases/latest)
 [![下载量](https://img.shields.io/github/downloads/Viking602/LPchatprefix/total.svg)](https://github.com/Viking602/LPchatprefix/releases)
 [![许可证](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)](https://minecraft.net)
-[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.0+-orange.svg)](https://neoforged.net)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green.svg)](https://minecraft.net)
+[![Forge](https://img.shields.io/badge/Forge-47.1.0+-orange.svg)](https://files.minecraftforge.net)
 
-一个服务器端 NeoForge 模组，用于在 Minecraft 1.21.1 的聊天消息中显示 LuckPerms 的前缀和后缀。
+一个服务器端 Forge 模组，用于在 Minecraft 1.20.1 的聊天消息中显示 LuckPerms 的前缀和后缀。
 
 [English](README.md) | **中文**
 
@@ -20,10 +20,10 @@
 
 ## 系统要求
 
-- Minecraft 1.21.1（严格限定此版本）
-- NeoForge 21.1.0 或更高版本
+- Minecraft 1.20.1（严格限定此版本）
+- Forge 47.1.0 或更高版本
 - 服务器已安装 LuckPerms 插件
-- Java 21 或更高版本
+- Java 17 或更高版本
 
 ## 安装说明
 
@@ -31,7 +31,7 @@
 从 [GitHub Releases](https://github.com/Viking602/LPchatprefix/releases/latest) 下载最新版本
 
 ### 服务器安装
-1. 从[发布页面](https://github.com/Viking602/LPchatprefix/releases)下载最新的 `lpchatprefix-1.21.1_1.1.0.jar`
+1. 从[发布页面](https://github.com/Viking602/LPchatprefix/releases)下载最新的 `lpchatprefix-1.20.1_1.1.0.jar`
 2. 将 JAR 文件放入服务器的 `mods` 文件夹
 3. 确保 LuckPerms 已安装并配置
 4. 启动/重启服务器
@@ -104,9 +104,9 @@
 - 检查是否有冲突的聊天格式化插件/模组
 
 ### 模组无法加载
-- 验证是否使用 Minecraft 1.21.1 版本
-- 确保 NeoForge 版本为 21.1.0 或更高
-- 检查 Java 版本是否为 21 或更高
+- 验证是否使用 Minecraft 1.20.1 版本
+- 确保 Forge 版本为 47.1.0 或更高
+- 检查 Java 版本是否为 17 或更高
 
 ## 从源代码构建
 
@@ -119,7 +119,7 @@ cd LPchatprefix
 ./gradlew clean build
 
 # 输出的 JAR 文件将在 build/libs/ 目录中
-# 文件：lpchatprefix-1.21.1_1.1.0.jar
+# 文件：lpchatprefix-1.20.1_1.1.0.jar
 ```
 
 ## 版本发布
@@ -127,8 +127,8 @@ cd LPchatprefix
 当推送新的标签时，会自动构建并发布版本：
 ```bash
 # 创建并推送版本标签
-git tag v1.21.1_1.1.0
-git push origin v1.21.1_1.1.0
+git tag v1.20.1_1.1.0
+git push origin v1.20.1_1.1.0
 ```
 
 ## 许可证
@@ -145,6 +145,6 @@ git push origin v1.21.1_1.1.0
 
 ## 致谢
 
-- 基于 NeoForge 构建
+- 基于 Forge 构建
 - 需要 Luck 开发的 LuckPerms
-- 专为 Minecraft 1.21.1 开发
+- 专为 Minecraft 1.20.1 开发

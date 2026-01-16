@@ -1,36 +1,37 @@
 plugins {
     id 'java'
-    id 'net.neoforged.moddev' version '2.0.72'
+    id 'net.minecraftforge.gradle' version '6.0.16'
 }
 
 group = 'com.example'
-version = '1.21.1_1.1.0'
+version = '1.20.1_1.1.0'
 
 java {
-    toolchain.languageVersion = JavaLanguageVersion.of(21)
+    toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
-neoForge {
-    version = "21.1.125" // 最新 NeoForge 1.21.1 构建号之一
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
     runs {
         client {
-            gameDirectory = project.file("run")
+            workingDirectory project.file('run')
         }
         server {
-            gameDirectory = project.file("run_server")
+            workingDirectory project.file('run_server')
         }
     }
 }
 
 repositories {
     mavenCentral()
-    maven { url = 'https://maven.neoforged.net/releases' }
+    maven { url = 'https://maven.minecraftforge.net' }
     maven { url = 'https://repo.lucko.me/' }
     maven { url = 'https://repo.spongepowered.org/maven' }
 }
 
 dependencies {
-    compileOnly "net.luckperms:api:5.4"
+    minecraft 'net.minecraftforge:forge:1.20.1-47.1.0'
+    compileOnly 'net.luckperms:api:5.4'
     // 不需要 Adventure API，直接使用 Minecraft 原生 Component
 }
 
