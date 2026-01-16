@@ -1,12 +1,12 @@
-# LuckPerms Chat Prefix for NeoForge
+# LuckPerms Chat Prefix for Forge
 
 [![GitHub Release](https://img.shields.io/github/release/Viking602/LPchatprefix.svg)](https://github.com/Viking602/LPchatprefix/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/Viking602/LPchatprefix/total.svg)](https://github.com/Viking602/LPchatprefix/releases)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21.1-green.svg)](https://minecraft.net)
-[![NeoForge](https://img.shields.io/badge/NeoForge-21.1.0+-orange.svg)](https://neoforged.net)
+[![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green.svg)](https://minecraft.net)
+[![Forge](https://img.shields.io/badge/Forge-47.1.0+-orange.svg)](https://files.minecraftforge.net)
 
-A server-side NeoForge mod that displays LuckPerms prefixes and suffixes in chat messages for Minecraft 1.21.1.
+A server-side Forge mod that displays LuckPerms prefixes and suffixes in chat messages for Minecraft 1.20.1.
 
 ## Features
 
@@ -18,10 +18,10 @@ A server-side NeoForge mod that displays LuckPerms prefixes and suffixes in chat
 
 ## Requirements
 
-- Minecraft 1.21.1 (strictly this version only)
-- NeoForge 21.1.0 or higher
+- Minecraft 1.20.1 (strictly this version only)
+- Forge 47.1.0 or higher
 - LuckPerms plugin installed on server
-- Java 21 or higher
+- Java 17 or higher
 
 ## Installation
 
@@ -29,7 +29,7 @@ A server-side NeoForge mod that displays LuckPerms prefixes and suffixes in chat
 Download the latest version from [GitHub Releases](https://github.com/Viking602/LPchatprefix/releases/latest)
 
 ### Server Installation
-1. Download the latest `lpchatprefix-1.21.1_1.1.0.jar` from [releases page](https://github.com/Viking602/LPchatprefix/releases)
+1. Download the latest `lpchatprefix-1.20.1_1.1.0.jar` from [releases page](https://github.com/Viking602/LPchatprefix/releases)
 2. Place the JAR file in your server's `mods` folder
 3. Ensure LuckPerms is installed and configured
 4. Start/restart your server
@@ -102,9 +102,9 @@ The mod supports Minecraft color codes using the `&` symbol:
 - Check for conflicting chat formatting plugins/mods
 
 ### Mod not loading
-- Verify you're using Minecraft 1.21.1 exactly
-- Ensure NeoForge version is 21.1.0 or higher
-- Check Java version is 21 or higher
+- Verify you're using Minecraft 1.20.1 exactly
+- Ensure Forge version is 47.1.0 or higher
+- Check Java version is 17 or higher
 
 ## Building from Source
 
@@ -117,7 +117,7 @@ cd LPchatprefix
 ./gradlew clean build
 
 # Output JAR will be in build/libs/
-# File: lpchatprefix-1.21.1_1.1.0.jar
+# File: lpchatprefix-1.20.1_1.1.0.jar
 ```
 
 ## Releases
@@ -125,8 +125,8 @@ cd LPchatprefix
 Releases are automatically built and published when a new tag is pushed:
 ```bash
 # Create and push a version tag
-git tag v1.21.1_1.1.0
-git push origin v1.21.1_1.1.0
+git tag v1.20.1_1.1.0
+git push origin v1.20.1_1.1.0
 ```
 
 ## License
@@ -143,6 +143,6 @@ For issues, questions, or suggestions, please open an issue on the GitHub reposi
 
 ## Credits
 
-- Built for NeoForge
+- Built for Forge
 - Requires LuckPerms by Luck
-- Developed for Minecraft 1.21.1
+- Developed for Minecraft 1.20.1
