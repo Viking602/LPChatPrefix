@@ -12,20 +12,20 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-    
-    - name: Set up JDK 21
+
+    - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
-        java-version: '21'
+        java-version: '17'
         distribution: 'temurin'
-    
+
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    
+
     - name: Cache Gradle packages
       uses: actions/cache@v3
       with:
@@ -35,17 +35,17 @@ jobs:
         key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
         restore-keys: |
           ${{ runner.os }}-gradle-
-    
+
     - name: Build with Gradle
       run: ./gradlew clean build
-    
+
     - name: Get version from tag
       id: get_version
       run: |
         VERSION=${GITHUB_REF#refs/tags/}
         echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
         echo "Building version $VERSION"
-    
+
     - name: Create Release and Upload Assets
       uses: softprops/action-gh-release@v1
       with:
@@ -55,8 +55,8 @@ jobs:
           # LPChatPrefix ${{ steps.get_version.outputs.VERSION }}
           
           ## 更新内容 / Changelog
-          - 适配 Minecraft 1.21.1
-          - 支持 NeoForge 21.1.0+
+          - 适配 Minecraft 1.20.1
+          - 支持 Forge 47.1.0+
           - 服务器端模组，客户端无需安装
           
           ## 安装说明 / Installation
@@ -66,11 +66,11 @@ jobs:
           4. 重启服务器
           
           ## 系统要求 / Requirements
-          - Minecraft 1.21.1 (exactly)
-          - NeoForge 21.1.0+
+          - Minecraft 1.20.1 (exactly)
+          - Forge 47.1.0+
           - LuckPerms
-          - Java 21+
+          - Java 17+
         draft: false
         prerelease: false
         files: |
-          ./build/libs/lpchatprefix-1.21.1_1.1.0.jar
+          ./build/libs/lpchatprefix-${{ steps.get_version.outputs.VERSION }}.jar
